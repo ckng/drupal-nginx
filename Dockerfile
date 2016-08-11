@@ -111,6 +111,7 @@ RUN mkdir /etc/nginx/conf.d && \
 COPY nginx.conf /etc/nginx/nginx.conf
 COPY fastcgi_params /etc/nginx/fastcgi_params
 COPY drupal* /opt/
+COPY dynamic-sites.conf /opt/
 
 WORKDIR /var/www/html
 VOLUME /var/www/html

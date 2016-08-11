@@ -12,7 +12,8 @@ fi
 
 # Copy default nginx config.
 if [ ! "$(ls -A /etc/nginx/conf.d)" ]; then
-    cp /opt/drupal${DRUPAL_VERSION}.conf /etc/nginx/conf.d/
+    cp /opt/dynamic-sites.conf /etc/nginx/conf.d/
+    # cp -r /opt/sites/*.conf /etc/nginx/conf.d/
 fi
 
 # Configure docroot.
